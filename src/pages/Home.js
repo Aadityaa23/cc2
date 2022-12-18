@@ -8,37 +8,18 @@ import {
 	Typography,
 	Button,
 	Grid,
+	CssBaseline,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import NavBar from "../components/NavBar";
 
 function Home() {
 	return (
 		<React.Fragment>
-			<AppBar position="static">
-				<Toolbar
-					sx={{
-						justifyContent: "space-between",
-						height: 75,
-					}}
-				>
-					<Box>
-						<Typography variant="h2">Carbon Coin</Typography>
-					</Box>
-
-					<Box>
-						<Button>
-							<Typography Container="h3">Home</Typography>{" "}
-						</Button>
-						<Button>
-							<Typography Container="h3">About Us</Typography>{" "}
-						</Button>
-						<Button>
-							<Typography Container="h3">Sign Up</Typography>{" "}
-						</Button>
-					</Box>
-				</Toolbar>
-			</AppBar>
+			<CssBaseline />
+			<NavBar></NavBar>
+			<Typography variant="h4">Home</Typography>
 		</React.Fragment>
 	);
 }

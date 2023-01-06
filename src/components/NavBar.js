@@ -10,10 +10,13 @@ import {
 	Grid,
 	ThemeProvider,
 	CssBaseline,
+	CardMedia,
+	ButtonBase,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { theme } from "./styles";
+import CCLogo from "../components/cclogo.png";
 
 function NavBar() {
 	return (
@@ -28,17 +31,52 @@ function NavBar() {
 						}}
 					>
 						<Box>
-							<Typography variant="h2">Carbon Coin</Typography>
+							<ButtonBase href="/">
+								<Box
+									display="flex"
+									direction="row"
+									sx={{
+										justifyContent: "left",
+										alignItems: "center",
+									}}
+								>
+									<CardMedia
+										component="img"
+										src={CCLogo}
+										alt="some restaurant"
+										sx={{
+											height: "10%",
+											width: "10%",
+											pr: 1,
+										}}
+									/>
+									<Typography variant="h2">Carbon Coin</Typography>
+								</Box>
+							</ButtonBase>
 						</Box>
 
 						<Box>
-							<Button color="secondary" href="/">
+							<Button
+								sx={{
+									color: theme.palette.primary.light,
+								}}
+								href="/"
+							>
 								<Typography Container="h3">Home</Typography>{" "}
 							</Button>
-							<Button color="secondary" href="/aboutus">
+							<Button
+								sx={{
+									color: theme.palette.primary.light,
+								}}
+								href="/aboutus"
+							>
 								<Typography Container="h3">About Us</Typography>{" "}
 							</Button>
-							<Button color="secondary">
+							<Button
+								sx={{
+									color: theme.palette.primary.light,
+								}}
+							>
 								<Typography Container="h3">Sign Up</Typography>{" "}
 							</Button>
 						</Box>

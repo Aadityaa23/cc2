@@ -13,13 +13,18 @@ import {
 import { Box } from "@mui/system";
 import React from "react";
 import NavBar from "../components/NavBar";
+import MyBanner from "../components/MyBanner";
+import { Main } from "../components/styles";
 
 function Home() {
 	return (
 		<React.Fragment>
 			<CssBaseline />
-			<NavBar></NavBar>
-			<Typography variant="h4">Home</Typography>
+			<Main>
+				<NavBar></NavBar>
+				<MyBanner></MyBanner>
+				<Typography variant="h4">Home</Typography>
+			</Main>
 		</React.Fragment>
 	);
 }

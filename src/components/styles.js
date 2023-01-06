@@ -13,15 +13,15 @@ import { ThemeContext } from "@emotion/react";
 export const theme = createTheme({
 	palette: {
 		primary: {
-			main: "#00008B", // dark pink/red
-			light: "#ADD8E6", // light pink
+			main: "#263169", // dark pink/red
+			light: "#FFFFFF", // light pink
 		},
 		secondary: {
-			main: "#ADD8E6", // Turquoise
+			main: "#495579", // Turquoise
 			light: "#96F4E4", // Light turquoise
 		},
 		info: {
-			main: "#F8F8F8", // light grey
+			main: "#251749", // light grey
 			dark: "#6F6457", // darker gray
 		},
 	},
@@ -56,6 +56,8 @@ export const Banner = styled(Card)({
 	textAlign: "center",
 	height: 400,
 	marginTop: 20,
+	backgroundSize: "cover",
+	backgroundPosition: "center",
 });
 
 export const HighlightText = styled(Typography)({

@@ -23,7 +23,7 @@ function NavBar() {
 		<React.Fragment>
 			<CssBaseline />
 			<ThemeProvider theme={theme}>
-				<AppBar position="static" color="primary">
+				<AppBar position="static" color="secondary">
 					<Toolbar
 						sx={{
 							justifyContent: "space-between",
@@ -50,7 +50,7 @@ function NavBar() {
 											pr: 1,
 										}}
 									/>
-									<Typography variant="h2">Carbon Coin</Typography>
+									<Typography variant="h5">Carbon Coin</Typography>
 								</Box>
 							</ButtonBase>
 						</Box>

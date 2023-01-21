@@ -46,10 +46,8 @@ function MyBanner() {
 					>
 						<>
 							<Typography variant="h1" color="white">
-								Home
+								Carbon Coin
 							</Typography>
-
-							<br />
 						</>
 					</div>
 				</Box>

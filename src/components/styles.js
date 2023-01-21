@@ -40,6 +40,7 @@ export const MyCard = styled(Card)({
 
 export const Main = styled("main")({
 	backgroundColor: theme.palette.info.main,
+	color: theme.palette.primary.light,
 });
 
 export const Logo = styled("span")({

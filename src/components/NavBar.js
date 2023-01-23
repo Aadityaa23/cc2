@@ -17,8 +17,11 @@ import { Box } from "@mui/system";
 import React from "react";
 import { theme } from "./styles";
 import CCLogo from "../components/cclogo.png";
+import { useMediaQuery } from "react-responsive";
 
 function NavBar() {
+	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
+	const ccText = isMobile ? "" : "Carbon Coin";
 	return (
 		<React.Fragment>
 			<CssBaseline />
@@ -45,39 +48,47 @@ function NavBar() {
 										src={CCLogo}
 										alt="some restaurant"
 										sx={{
-											height: "10%",
-											width: "10%",
+											height: 30,
+											width: 60,
 											pr: 1,
 										}}
 									/>
-									<Typography variant="h5">Carbon Coin</Typography>
+									<Typography variant="h5">{ccText}</Typography>
 								</Box>
 							</ButtonBase>
 						</Box>
 
-						<Box>
+						<Box
+							sx={{
+								display: "flex",
+								direction: "row",
+							}}
+						>
 							<Button
 								sx={{
 									color: theme.palette.primary.light,
+									width: 100,
 								}}
 								href="/"
 							>
-								<Typography Container="h3">Home</Typography>{" "}
+								<Typography variant="p">Home</Typography>{" "}
 							</Button>
 							<Button
 								sx={{
 									color: theme.palette.primary.light,
+									width: 100,
 								}}
 								href="/aboutus"
 							>
-								<Typography Container="h3">About Us</Typography>{" "}
+								<Typography variant="p">About Us</Typography>{" "}
 							</Button>
 							<Button
 								sx={{
 									color: theme.palette.primary.light,
+									width: 100,
 								}}
 							>
-								<Typography Container="h3">Sign Up</Typography>{" "}
+								<Typography variant="p">Sign Up</Typography>{" "}
 							</Button>
 						</Box>
 					</Toolbar>

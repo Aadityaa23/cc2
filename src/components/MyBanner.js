@@ -27,6 +27,7 @@ function MyBanner() {
 				<Box
 					display="flex"
 					direction="column"
+					alignContent="center"
 					alignItems="center"
 					justifyContent="center"
 					sx={{
@@ -44,11 +45,12 @@ function MyBanner() {
 							position: "absolute",
 						}}
 					>
-						<>
-							<Typography variant="h1" color="white">
-								Carbon Coin
-							</Typography>
-						</>
+						<Typography textAlign="center" variant="h1" color="white">
+							Carbon Coin
+						</Typography>
+						<Typography variant="h4" textAlign="center">
+							Using Crypto to Combat Climate Change
+						</Typography>
 					</div>
 				</Box>
 			</ThemeProvider>

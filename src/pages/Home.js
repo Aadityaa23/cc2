@@ -30,6 +30,7 @@ import { useMediaQuery } from "react-responsive";
 function Home() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
 	const flexDir = isMobile ? "column" : "row";
+	const currHeight = isMobile ? 500 : 400;
 
 	return (
 		<React.Fragment>
@@ -40,7 +41,7 @@ function Home() {
 
 				<Container
 					sx={{
-						minHeight: 400,
+						minHeight: currHeight,
 						display: "flex",
 						flexDirection: flexDir,
 						alignItems: "center",

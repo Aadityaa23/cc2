@@ -41,20 +41,21 @@ function Home() {
 
 				<Container
 					sx={{
-						minHeight: currHeight,
 						display: "flex",
 						flexDirection: flexDir,
 						alignItems: "center",
-						p: 2,
+						pb: 10,
 					}}
 				>
 					<Box
 						sx={{
-							p: 5,
+							p: 7,
 						}}
 					>
-						<Typography variant="h2">Our Purpose</Typography>
-						<Typography variant="p">
+						<Typography gutterBottom variant="h2">
+							Our Purpose
+						</Typography>
+						<Typography gutterBottom variant="p">
 							Our mission is to transform people’s perception on Carbon. Carbon
 							Dioxide should be viewed as a store of value similar to Gold. It
 							is a resource that needs to be mined from the air, and locked away
@@ -77,7 +78,7 @@ function Home() {
 				<Container
 					sx={{
 						minHeight: 400,
-						backgroundColor: theme.palette.primary.main,
+						backgroundColor: theme.palette.primary.light,
 					}}
 				>
 					<Grid container spacing={4} alignItems="stretch">

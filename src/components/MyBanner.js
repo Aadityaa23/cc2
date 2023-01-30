@@ -19,6 +19,8 @@ function MyBanner() {
 	var currWidth = isMobile ? 3 : 15;
 
 	var currLogo = isMobile ? "column" : "row";
+	var titleFontSize = isMobile ? "50px" : "80px";
+	var tagFontSize = isMobile ? "20px" : "25px";
 
 	return (
 		<React.Fragment>
@@ -32,7 +34,6 @@ function MyBanner() {
 					justifyContent="center"
 					sx={{
 						height: currHeight,
-						mt: 1,
 					}}
 				>
 					<CardMedia
@@ -45,10 +46,21 @@ function MyBanner() {
 							position: "absolute",
 						}}
 					>
-						<Typography textAlign="center" variant="h1" color="white">
+						<Typography
+							gutterBottom
+							textAlign="center"
+							variant="h2"
+							color="white"
+							fontSize={titleFontSize}
+						>
 							Carbon Coin
 						</Typography>
-						<Typography variant="h4" textAlign="center">
+						<Typography
+							fontSize={tagFontSize}
+							gutterBottom
+							variant="h5"
+							textAlign="center"
+						>
 							Using Crypto to Combat Climate Change
 						</Typography>
 					</div>

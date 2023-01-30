@@ -23,6 +23,7 @@ export const theme = createTheme({
 		info: {
 			main: "#251749", // light grey
 			dark: "#6F6457", // darker gray
+			light: "#FFFFFF",
 		},
 	},
 	typography: {
@@ -56,8 +57,6 @@ export const Banner = styled(Card)({
 	justifyContent: "center",
 	textAlign: "center",
 	height: 400,
-	marginTop: 20,
-	backgroundSize: "cover",
 	backgroundPosition: "center",
 });
 

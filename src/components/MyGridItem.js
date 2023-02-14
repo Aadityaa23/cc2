@@ -48,7 +48,9 @@ function MyGridItem(props) {
 							alignItems: "center",
 						}}
 					>
-						<Typography variant="h3">{props.title}</Typography>
+						<Typography variant="h3" textAlign="center">
+							{props.title}
+						</Typography>
 						<Typography variant="p">{props.body}</Typography>
 					</Card>
 				</Grid>

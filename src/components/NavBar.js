@@ -26,11 +26,11 @@ function NavBar() {
 		<React.Fragment>
 			<CssBaseline />
 			<ThemeProvider theme={theme}>
-				<AppBar position="static" color="secondary">
+				<AppBar position="static" color="primary">
 					<Toolbar
 						sx={{
 							justifyContent: "space-between",
-							height: 75,
+							height: 70,
 						}}
 					>
 						<Box>

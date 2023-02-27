@@ -6,6 +6,7 @@ import {
 	Box,
 	Button,
 	Card,
+	ButtonBase,
 } from "@mui/material";
 import React from "react";
 import NavBar from "../components/NavBar";
@@ -91,97 +92,106 @@ function AboutUs() {
 						>
 							The Team
 						</Typography>
-						<Card
-							sx={{
-								backgroundColor: theme.palette.secondary.main,
-								color: theme.palette.primary.light,
-								display: "flex",
-								flexDirection: flexDir,
-								alignItems: "center",
-								width: cardWidth,
-							}}
+						<ButtonBase
+							href={"https://www.linkedin.com/in/aadityaa-gupta-9a7979208/"}
+							target="_blank"
 						>
-							<CardMedia
-								component="img"
-								src={AadiImage}
-								alt="some restaurant"
+							<Card
 								sx={{
-									height: 350,
-									width: 450,
-									py: 5,
-									px: 10,
-								}}
-							/>
-
-							<Box
-								sx={{
-									px: isMobile ? 3 : 10,
-									pb: 2,
+									backgroundColor: theme.palette.secondary.main,
+									color: theme.palette.primary.light,
+									display: "flex",
+									flexDirection: flexDir,
+									alignItems: "center",
+									width: cardWidth,
 								}}
 							>
-								<Typography variant="h3" gutterBottom>
-									Aadityaa Gupta
-								</Typography>
-								<Typography variant="body">
-									Aadityaa is a Computer Science student at the University of
-									Melbourne, who is passionate about climate change and
-									sustainability. He developed this passion when he moved to
-									Canada from India at the age of 11, where he witnessed how
-									beautiful nature was by going on hikes and camping trips.
-									Aadityaa has had professional working experience at Telstra,
-									where he completed an internship as a Data Analyst. In his
-									free time Aadityaa likes to volunteer for sustainability
-									initiatives, and explore his creativity through stand-up
-									comedy at the university.
-								</Typography>
-							</Box>
-						</Card>
+								<CardMedia
+									component="img"
+									src={AadiImage}
+									alt="some restaurant"
+									sx={{
+										height: 350,
+										width: 450,
+										py: 5,
+										px: 10,
+									}}
+								/>
+
+								<Box
+									sx={{
+										px: isMobile ? 3 : 10,
+										pb: 2,
+									}}
+								>
+									<Typography variant="h3" gutterBottom>
+										Aadityaa Gupta
+									</Typography>
+									<Typography variant="body">
+										Aadityaa is a Computer Science student at the University of
+										Melbourne, who is passionate about climate change and
+										sustainability. He developed this passion when he moved to
+										Canada from India at the age of 11, where he witnessed how
+										beautiful nature was by going on hikes and camping trips.
+										Aadityaa has had professional working experience at Telstra,
+										where he completed an internship as a Data Analyst. In his
+										free time Aadityaa likes to volunteer for sustainability
+										initiatives, and explore his creativity through stand-up
+										comedy at the university.
+									</Typography>
+								</Box>
+							</Card>
+						</ButtonBase>
 
 						<br />
-
-						<Card
-							sx={{
-								backgroundColor: theme.palette.secondary.main,
-								color: theme.palette.primary.light,
-								display: "flex",
-								flexDirection: flexDir,
-								alignItems: "center",
-								width: cardWidth,
-							}}
+						<ButtonBase
+							href={"https://www.linkedin.com/in/haithongnguyen/"}
+							target="_blank"
 						>
-							<CardMedia
-								component="img"
-								src={ThongImage}
-								alt="some restaurant"
+							<Card
 								sx={{
-									height: 350,
-									width: 450,
-									py: 5,
-									px: 10,
-								}}
-							/>
-
-							<Box
-								sx={{
-									px: isMobile ? 3 : 10,
-									pb: 2,
+									backgroundColor: theme.palette.secondary.main,
+									color: theme.palette.primary.light,
+									display: "flex",
+									flexDirection: flexDir,
+									alignItems: "center",
+									width: cardWidth,
 								}}
 							>
-								<Typography variant="h3" gutterBottom>
-									Hai Thong Nguyen
-								</Typography>
-								<Typography variant="body">
-									Hai Thong Nguyen is a computer science and psychology student
-									at the University of Melbourne. He grew up in Neustadt an der
-									Weinstraße, Germany, before moving to Bangkok, Thailand for
-									high school. There, Hai witnessed the impact of human rights
-									and climate change first-hand and had worked alongside
-									societies and NGOs including A21 Thailand. Presently, Hai
-									devotes his time in climate tech initiatives and occasionally
-									publishes blogs relating to tech.
-								</Typography>
-							</Box>
-						</Card>
+								<CardMedia
+									component="img"
+									src={ThongImage}
+									alt="some restaurant"
+									sx={{
+										height: 350,
+										width: 450,
+										py: 5,
+										px: 10,
+									}}
+								/>
+
+								<Box
+									sx={{
+										px: isMobile ? 3 : 10,
+										pb: 2,
+									}}
+								>
+									<Typography variant="h3" gutterBottom>
+										Hai Thong Nguyen
+									</Typography>
+									<Typography variant="body">
+										Hai Thong Nguyen is a computer science and psychology
+										student at the University of Melbourne. He grew up in
+										Neustadt an der Weinstraße, Germany, before moving to
+										Bangkok, Thailand for high school. There, Hai witnessed the
+										impact of human rights and climate change first-hand and had
+										worked alongside societies and NGOs including A21 Thailand.
+										Presently, Hai devotes his time in climate tech initiatives
+										and occasionally publishes blogs relating to tech.
+									</Typography>
+								</Box>
+							</Card>
+						</ButtonBase>
 						<br />
 					</Container>
 					<Footer></Footer>

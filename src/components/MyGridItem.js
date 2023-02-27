@@ -46,6 +46,7 @@ function MyGridItem(props) {
 							width: 1000,
 							justifyContent: "center",
 							alignItems: "center",
+							textAlign: "center",
 						}}
 					>
 						<Typography variant="h3" textAlign="center">

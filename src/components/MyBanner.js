@@ -6,7 +6,7 @@ import {
 	CssBaseline,
 	ThemeProvider,
 } from "@mui/material";
-import { theme, Banner } from "./styles";
+import { theme, Banner, BorderDivider } from "./styles";
 import { useMediaQuery } from "react-responsive";
 import React from "react";
 import { ContactEmergency } from "@mui/icons-material";
@@ -14,7 +14,7 @@ import { Container } from "@mui/system";
 
 function MyBanner(props) {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
-	var currHeight = isMobile ? 400 : 550;
+	var currHeight = isMobile ? 400 : 500;
 	var currWidth = isMobile ? 3 : 15;
 
 	var currLogo = isMobile ? "column" : "row";
@@ -76,6 +76,7 @@ function MyBanner(props) {
 						</Typography>
 					</Box>
 				</Box>
+				<BorderDivider></BorderDivider>
 			</ThemeProvider>
 		</React.Fragment>
 	);

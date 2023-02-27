@@ -43,13 +43,12 @@ function DAC() {
 							display: "flex",
 							flexDirection: flexDir,
 							alignItems: "center",
-							justifyContent: "center",
-							height: { lg: 350, md: 400 },
 						}}
 					>
 						<Box
 							sx={{
 								p: 7,
+								py: 10,
 							}}
 						>
 							<Typography gutterBottom variant="h2">
@@ -86,6 +85,17 @@ function DAC() {
 							</Typography>
 							<br />
 						</Box>
+						<CardMedia
+							component="img"
+							src="https://pixabay.com/get/g911ee4095891e2216f5b056c92f345fc07b532ccb2610f00c5ab46f387e2edc24932ccc62500d0b7bc01c55cea50f381ba34771ae5a43dbf8f7699c0948347a4b6a2afc26389d8c95a32bee85e07e639_1920.png"
+							alt="some restaurant"
+							sx={{
+								height: 400,
+								width: 400,
+								px: 1,
+								pb: 5,
+							}}
+						/>
 					</Container>
 					<Container
 						sx={{

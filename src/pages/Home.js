@@ -43,7 +43,7 @@ function Home() {
 				<MyBanner
 					title="Carbon Coin"
 					tagline="Using Crypto to Combat Climate Change"
-					BannerImage={BanImage}
+					BannerImage="https://pixabay.com/get/g027a767a7a3ebaf778bd24b90f5ef7cecba6dc9786bcce7901021ec9c916bad5cfc8a54b4afac47db944cee20b37a404395c4ae9cce370067186867bcb4356d459bf84da165849118b95358ed2f724cd_1920.jpg"
 				></MyBanner>
 
 				<Container
@@ -145,11 +145,11 @@ function Home() {
 				>
 					<CardMedia
 						component="img"
-						src={CCLogo}
+						src="https://source.unsplash.com/FewHpO4VC9Y"
 						alt="some restaurant"
 						sx={{
-							height: "40%",
-							width: "40%",
+							width: "1000px",
+							height: "250px",
 							px: 1,
 						}}
 					/>

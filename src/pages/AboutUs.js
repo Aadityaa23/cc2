@@ -64,7 +64,7 @@ function AboutUs() {
 						</Box>
 						<CardMedia
 							component="img"
-							src={CCLogo}
+							src="https://pixabay.com/get/g3d6ee263fe9212cbeb12c1e73eb83a28243f1828056fa63c5ae45757c613ca43cec0cf1926796931cdfe0ab1ee5d13351ee57a2d431f81b8d300c20131f7185eae1ee0d21be72ec3994bed5ad8b0e25e_1920.jpg"
 							alt="some restaurant"
 							sx={{
 								height: 300,

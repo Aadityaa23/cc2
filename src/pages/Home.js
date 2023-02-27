@@ -61,7 +61,7 @@ function Home() {
 						}}
 					>
 						<Typography gutterBottom variant="h2">
-							Our Purpose
+							Our Mission
 						</Typography>
 						<Typography
 							gutterBottom

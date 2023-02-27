@@ -42,7 +42,7 @@ function MyGridItem(props) {
 							borderColor: theme.palette.primary.light,
 							backgroundColor: theme.palette.secondary.main,
 							color: theme.palette.primary.light,
-							height: 280,
+							height: 250,
 							width: 1000,
 							justifyContent: "center",
 							alignItems: "center",

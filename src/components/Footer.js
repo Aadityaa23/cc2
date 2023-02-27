@@ -35,7 +35,7 @@ function Footer(props) {
 						<Box
 							sx={{
 								width: 400,
-								textAlign: "left",
+								textAlign: "center",
 							}}
 						>
 							<Typography variant="h5">Carbon Coin</Typography>
@@ -50,7 +50,7 @@ function Footer(props) {
 						<Box
 							sx={{
 								width: 400,
-								textAlign: "left",
+								textAlign: "center",
 								mt: {
 									xs: 4,
 									md: 0,

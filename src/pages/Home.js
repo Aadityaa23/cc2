@@ -28,6 +28,7 @@ import {
 	StayPrimaryLandscape,
 } from "@mui/icons-material";
 import { useMediaQuery } from "react-responsive";
+import BanImage from "../components/forrest.jpg";
 
 function Home() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
@@ -39,7 +40,11 @@ function Home() {
 			<CssBaseline />
 			<Main>
 				<NavBar></NavBar>
-				<MyBanner></MyBanner>
+				<MyBanner
+					title="Carbon Coin"
+					tagline="Using Crypto to Combat Climate Change"
+					BannerImage={BanImage}
+				></MyBanner>
 
 				<Container
 					sx={{
@@ -86,7 +91,6 @@ function Home() {
 					/>
 				</Container>
 				<Container
-					maxWidth={false}
 					sx={{
 						minHeight: 400,
 						backgroundColor: theme.palette.primary.light,
@@ -103,7 +107,7 @@ function Home() {
 					>
 						We are doing this by...
 					</Typography>
-					<Grid container spacing={4} alignItems="stretch">
+					<Grid container spacing={4}>
 						<MyGridItem
 							title="Step 1"
 							body="This is the first step towwards greatness"

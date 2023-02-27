@@ -8,14 +8,13 @@ import {
 } from "@mui/material";
 import { theme, Banner } from "./styles";
 import { useMediaQuery } from "react-responsive";
-import BannerImage from "../components/forrest.jpg";
 import React from "react";
 import { ContactEmergency } from "@mui/icons-material";
 import { Container } from "@mui/system";
 
-function MyBanner() {
+function MyBanner(props) {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
-	var currHeight = isMobile ? 400 : 450;
+	var currHeight = isMobile ? 400 : 550;
 	var currWidth = isMobile ? 3 : 15;
 
 	var currLogo = isMobile ? "column" : "row";
@@ -36,14 +35,26 @@ function MyBanner() {
 						height: currHeight,
 					}}
 				>
-					<CardMedia
-						component="img"
-						image={BannerImage}
-						sx={{ height: currHeight }}
-					/>
 					<div
 						style={{
+							position: "relative",
+							opacity: 0.6,
+							minWidth: "100%",
+							minHeight: "100%",
+						}}
+					>
+						<CardMedia
+							component="img"
+							image={props.BannerImage}
+							sx={{ height: currHeight }}
+						/>
+					</div>
+					<Box
+						style={{
 							position: "absolute",
+						}}
+						sx={{
+							backgroundClip: theme.palette.primary.main,
 						}}
 					>
 						<Typography
@@ -53,7 +64,7 @@ function MyBanner() {
 							color="white"
 							fontSize={titleFontSize}
 						>
-							Carbon Coin
+							{props.title}
 						</Typography>
 						<Typography
 							fontSize={tagFontSize}
@@ -61,9 +72,9 @@ function MyBanner() {
 							variant="h5"
 							textAlign="center"
 						>
-							Using Crypto to Combat Climate Change
+							{props.tagline}
 						</Typography>
-					</div>
+					</Box>
 				</Box>
 			</ThemeProvider>
 		</React.Fragment>

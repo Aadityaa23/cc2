@@ -104,6 +104,7 @@ function AboutUs() {
 									flexDirection: flexDir,
 									alignItems: "center",
 									width: cardWidth,
+									borderRadius: 3,
 								}}
 							>
 								<CardMedia
@@ -156,6 +157,7 @@ function AboutUs() {
 									flexDirection: flexDir,
 									alignItems: "center",
 									width: cardWidth,
+									borderRadius: 3,
 								}}
 							>
 								<CardMedia

@@ -83,6 +83,8 @@ function NavBar() {
 								<Typography variant="p">About Us</Typography>{" "}
 							</Button>
 							<Button
+								href="https://nphbdc7fpd8.typeform.com/to/JnhBOLoo?fbclid=IwAR1OCkvEu9eGjv0DPwXMrNCeByHvcIWjabetvIw7ZCee7Gf-TSAdyw3ysjE&typeform-source=l.facebook.com"
+								target="_blank"
 								sx={{
 									color: theme.palette.primary.light,
 									width: 100,

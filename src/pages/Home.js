@@ -7,6 +7,7 @@ import {
 	Toolbar,
 	Typography,
 	CardMedia,
+	Link,
 	Button,
 	Grid,
 	CssBaseline,
@@ -29,6 +30,8 @@ import {
 } from "@mui/icons-material";
 import { useMediaQuery } from "react-responsive";
 import BanImage from "../components/forrest.jpg";
+
+import CloseIcon from "@mui/icons-material/Close";
 
 function Home() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
@@ -76,7 +79,12 @@ function Home() {
 							safely in deep underground vaults.
 						</Typography>
 						<br />
-						<Button>Buy Now</Button>
+						<Button
+							href="https://nphbdc7fpd8.typeform.com/to/JnhBOLoo?fbclid=IwAR1OCkvEu9eGjv0DPwXMrNCeByHvcIWjabetvIw7ZCee7Gf-TSAdyw3ysjE&typeform-source=l.facebook.com"
+							target="-blank"
+						>
+							Buy Now
+						</Button>
 					</Box>
 					<CardMedia
 						component="img"
@@ -101,7 +109,7 @@ function Home() {
 						gutterBottom
 						textAlign="center"
 						sx={{
-							color: theme.palette.info.main,
+							color: theme.palette.info.dark,
 							p: 2,
 						}}
 					>
@@ -110,29 +118,33 @@ function Home() {
 					<Grid container spacing={4}>
 						<MyGridItem
 							title="Step 1"
-							body="This is the first step towwards greatness"
+							body="Remove one tonne of CO2 for each Carbon Coin produced"
 						></MyGridItem>
 						<MyGridItem
 							title="Step 2"
-							body="This is the first step towwards greatness"
+							body="Use Direct Air Capture to cleanse the air"
 						></MyGridItem>
 						<MyGridItem
 							title="Step 3"
-							body="This is the first step towwards greatness"
+							body="Scale the tech to reduce costs over time"
 						></MyGridItem>
 					</Grid>
+					<br />
 					<Typography
 						variant="h6"
 						textAlign="center"
-						gutterBottom
 						sx={{
 							color: theme.palette.info.dark,
+							P: 5,
 						}}
 					>
 						So every time a new Carbon Coin is minted, we will extract one tonne
 						of CO2 from the air and store it underground permenantly, using a
-						Carbon removal process called Direct Air Capture
+						Carbon removal process called{" "}
+						<Link href="/dac">Direct Air Capture</Link>
 					</Typography>
+
+					<br />
 				</Container>
 				<Container
 					sx={{
@@ -195,10 +207,13 @@ function Home() {
 						Our Customers{" "}
 					</Typography>
 					<Grid container spacing={4} alignItems="stretch">
-						<MyGridItem title="Individuals"></MyGridItem>
+						<MyGridItem title="Individuals">
+							<CloseIcon />
+						</MyGridItem>
 						<MyGridItem title="Small Businesses"></MyGridItem>
 						<MyGridItem title="Corporations"></MyGridItem>
 					</Grid>
+					<br />
 					<Typography
 						variant="h6"
 						textAlign="center"
@@ -207,10 +222,10 @@ function Home() {
 							color: theme.palette.info.dark,
 						}}
 					>
-						So every time a new Carbon Coin is minted, we will extract one tonne
-						of CO2 from the air and store it underground permenantly, using a
-						Carbon removal process called Direct Air Capture
+						Anyone who cares about the planet can choose to make a difference
+						with Carbon Coin
 					</Typography>
+					<br />
 				</Container>
 				<Container
 					sx={{

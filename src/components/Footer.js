@@ -5,6 +5,7 @@ import {
 	Box,
 	Typography,
 	Divider,
+	Link,
 	Grid,
 } from "@mui/material";
 import { theme, HighlightText, BorderDivider, Banner } from "./styles";
@@ -58,11 +59,30 @@ function Footer(props) {
 							}}
 						>
 							<Typography variant="h5">Quick Links:</Typography>
-							<Typography sx={{ mt: 2 }}>Aadityaa Gupta</Typography>
-							<Typography sx={{ mt: 1 }}>Saifullah Ndubano</Typography>
-							<Typography sx={{ mt: 1 }}>Quoc Hoang Nguyen</Typography>
-							<Typography sx={{ mt: 1 }}>Quynh Anh Nguyen</Typography>
-							<Typography sx={{ mt: 1 }}>Eric Shi</Typography>
+							<Typography sx={{ mt: 2 }}>
+								<Link color="secondary.light" href="/">
+									Home
+								</Link>
+							</Typography>
+							<Typography sx={{ mt: 2 }}>
+								<Link color="secondary.light" href="/aboutus">
+									About Us
+								</Link>
+							</Typography>
+							<Typography sx={{ mt: 2 }}>
+								<Link color="secondary.light" href="/dac">
+									Direct Air Capture
+								</Link>
+							</Typography>
+							<Typography sx={{ mt: 2 }}>
+								<Link
+									color="secondary.light"
+									href="https://nphbdc7fpd8.typeform.com/to/JnhBOLoo?fbclid=IwAR1OCkvEu9eGjv0DPwXMrNCeByHvcIWjabetvIw7ZCee7Gf-TSAdyw3ysjE&typeform-source=l.facebook.com"
+									target="_blank"
+								>
+									Sign Up
+								</Link>
+							</Typography>
 						</Box>
 					</Grid>
 					<Typography sx={{ mt: 6 }}>Published @ 2023</Typography>

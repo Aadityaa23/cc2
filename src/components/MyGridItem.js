@@ -11,8 +11,12 @@ import { theme, Banner } from "./styles";
 import { useMediaQuery } from "react-responsive";
 import BannerImage from "../components/forrest.jpg";
 import React from "react";
-import { ContactEmergency } from "@mui/icons-material";
+import { ContactEmergency, Man } from "@mui/icons-material";
 import { Container } from "@mui/system";
+import CCLogo from "./cclogo.png";
+
+import CloseIcon from "@mui/icons-material/Close";
+import ManIcon from "@mui/icons-material/Man";
 
 function MyGridItem(props) {
 	const body = "";
@@ -49,6 +53,11 @@ function MyGridItem(props) {
 							textAlign: "center",
 						}}
 					>
+						<CardMedia
+							component="img"
+							src="https://www.flaticon.com/free-icon/home-button_5974636?term=house&page=1&position=4&origin=search&related_id=5974636"
+							height="100"
+						/>
 						<Typography variant="h3" textAlign="center">
 							{props.title}
 						</Typography>

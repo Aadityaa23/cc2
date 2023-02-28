@@ -49,6 +49,7 @@ function DAC() {
 							sx={{
 								p: 7,
 								py: 10,
+								textAlign: "center",
 							}}
 						>
 							<Typography gutterBottom variant="h2">
@@ -128,6 +129,7 @@ function DAC() {
 								body="The CO2 is mineralised into rocks and stored safely underground"
 							></MyGridItem>
 						</Grid>
+						<br />
 						<Typography
 							variant="h6"
 							textAlign="center"
@@ -139,6 +141,7 @@ function DAC() {
 							The process for Direct Air Capture has many steps, but at a high
 							level this is what it looks like
 						</Typography>
+						<br />
 					</Container>
 					<Container
 						sx={{
@@ -165,6 +168,7 @@ function DAC() {
 						<Box
 							sx={{
 								p: 5,
+								textAlign: "center",
 							}}
 						>
 							<Typography variant="h2" gutterBottom>

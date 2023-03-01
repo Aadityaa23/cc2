@@ -35,7 +35,7 @@ function DAC() {
 					<MyBanner
 						title="Direct Air Capture"
 						BannerImage={
-							"https://pixabay.com/get/gbbecd9058ad67fb162f129f4c9ffac06cbd985f74b8bbe658ee7df7ae8008b47b8de6f7e4d026186cf5dbf5a73919323de3d879febb612cd9731a4822918175c0f666e09f321ca39cf5b04fb8aa06b57_1920.jpg"
+							"https://pixabay.com/get/gd98c5330d0a5bd6eb8f0144130269f6a58a866f74c7bf09f3be6fec6ff07df3a8644793379479743f136188ee4260986406a581d82668c4ee6441d6b1864a476db8b1d72bacda8e932fc7fd4b6134a98_1920.jpg"
 						}
 					></MyBanner>
 					<Container
@@ -88,7 +88,7 @@ function DAC() {
 						</Box>
 						<CardMedia
 							component="img"
-							src="https://pixabay.com/get/g911ee4095891e2216f5b056c92f345fc07b532ccb2610f00c5ab46f387e2edc24932ccc62500d0b7bc01c55cea50f381ba34771ae5a43dbf8f7699c0948347a4b6a2afc26389d8c95a32bee85e07e639_1920.png"
+							src="https://pixabay.com/get/g1a58fc12e780373a1864073abb5b1c33904ec35eea202d85ee4073b97cb809ec49cef8d5bf28ff30e2e76d0db81096a9775db4f85e4e46d4805d06573fcda51a803371da0f4109880177d59e9aff071a_1280.png"
 							alt="some restaurant"
 							sx={{
 								height: 400,

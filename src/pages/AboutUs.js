@@ -64,7 +64,7 @@ function AboutUs() {
 						</Box>
 						<CardMedia
 							component="img"
-							src="https://pixabay.com/get/g3d6ee263fe9212cbeb12c1e73eb83a28243f1828056fa63c5ae45757c613ca43cec0cf1926796931cdfe0ab1ee5d13351ee57a2d431f81b8d300c20131f7185eae1ee0d21be72ec3994bed5ad8b0e25e_1920.jpg"
+							src="https://pixabay.com/get/g2e84f0a03d3f85ee7fa5daf9bdeb916f34b7d09e88720b5dcffcd8e3e6a7763251b9e5f1b20c21d070a6116551879f76f05abdded799ac12db013d51b1f0275da6bb4197b9847c7fa439fb89c933e37f_1920.jpg"
 							alt="some restaurant"
 							sx={{
 								height: 300,

@@ -46,7 +46,7 @@ function Home() {
 				<MyBanner
 					title="Carbon Coin"
 					tagline="Using Crypto to Combat Climate Change"
-					BannerImage="https://pixabay.com/get/g027a767a7a3ebaf778bd24b90f5ef7cecba6dc9786bcce7901021ec9c916bad5cfc8a54b4afac47db944cee20b37a404395c4ae9cce370067186867bcb4356d459bf84da165849118b95358ed2f724cd_1920.jpg"
+					BannerImage="https://pixabay.com/get/gaea313ec9fe38008c7d202366927a69a0059412d7f2c3ff395bb3314ff6e385bc823601885f3b186183bc5a2e547fb8132819b2a9ab39e033679ac9a58a081756e40ed310612f272bdb2f8bf89082fb9_1920.jpg"
 				></MyBanner>
 
 				<Container

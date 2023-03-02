@@ -30,17 +30,31 @@ import {
 } from "@mui/icons-material";
 import { useMediaQuery } from "react-responsive";
 import BanImage from "../components/forrest.jpg";
+import { useState, useContext, useEffect } from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
+
+import MyDialog from "../components/MyDialog";
 
 function Home() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
 	const flexDir = isMobile ? "column" : "row";
 	const currHeight = isMobile ? 500 : 400;
 
+	const [open, setOpen] = React.useState(false);
+
+	const handleClickOpen = () => {
+		setOpen(true);
+	};
+
+	const handleClose = () => {
+		setOpen(false);
+	};
+
 	return (
 		<React.Fragment>
 			<CssBaseline />
+			<MyDialog open={open} handleClose={handleClose} />
 			<Main>
 				<NavBar></NavBar>
 				<MyBanner
@@ -79,11 +93,8 @@ function Home() {
 							safely in deep underground vaults.
 						</Typography>
 						<br />
-						<Button
-							href="https://nphbdc7fpd8.typeform.com/to/JnhBOLoo?fbclid=IwAR1OCkvEu9eGjv0DPwXMrNCeByHvcIWjabetvIw7ZCee7Gf-TSAdyw3ysjE&typeform-source=l.facebook.com"
-							target="-blank"
-						>
-							Buy Now
+						<Button variant="outlined" onClick={handleClickOpen}>
+							<Typography>Buy Now</Typography>>
 						</Button>
 					</Box>
 					<CardMedia

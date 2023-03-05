@@ -18,11 +18,11 @@ export const theme = createTheme({
 		},
 		secondary: {
 			main: "#495579", // lighter blue
-			light: "#96F4E4", // Light grey
+			light: "#FFFFFF", // Light grey
 		},
 		info: {
-			main: "#251749", // darkest blue
-			dark: "#6F6457", // darker gray
+			main: "#1C1B37", // darkest blue
+			dark: "#70738C", // darker gray
 			light: "#FFFFFF",
 		},
 	},

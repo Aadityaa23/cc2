@@ -21,7 +21,7 @@ import { useMediaQuery } from "react-responsive";
 
 function NavBar() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
-	const ccText = isMobile ? "" : "Carbon Coin";
+	const ccText = isMobile ? "" : "";
 	return (
 		<React.Fragment>
 			<CssBaseline />

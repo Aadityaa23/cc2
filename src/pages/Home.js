@@ -46,7 +46,7 @@ function Home() {
 				<MyBanner
 					title="Carbon Coin"
 					tagline="Using Crypto to Combat Climate Change"
-					BannerImage="https://pixabay.com/get/gaea313ec9fe38008c7d202366927a69a0059412d7f2c3ff395bb3314ff6e385bc823601885f3b186183bc5a2e547fb8132819b2a9ab39e033679ac9a58a081756e40ed310612f272bdb2f8bf89082fb9_1920.jpg"
+					BannerImage="https://cdn.pixabay.com/photo/2016/11/21/17/41/star-trails-1846734_1280.jpg"
 				></MyBanner>
 
 				<Container
@@ -89,10 +89,9 @@ function Home() {
 					<CardMedia
 						component="img"
 						src={CCLogo}
-						alt="some restaurant"
 						sx={{
 							height: 300,
-							width: 400,
+							width: 500,
 							px: 1,
 							pb: 5,
 						}}
@@ -138,7 +137,7 @@ function Home() {
 							P: 5,
 						}}
 					>
-						So every time a new Carbon Coin is minted, we will extract one tonne
+						Every time a new Carbon Coin is minted, we will extract one tonne
 						of CO2 from the air and store it underground permenantly, using a
 						Carbon removal process called{" "}
 						<Link href="/dac">Direct Air Capture</Link>
@@ -157,7 +156,7 @@ function Home() {
 				>
 					<CardMedia
 						component="img"
-						src="https://source.unsplash.com/FewHpO4VC9Y"
+						src="https://images.unsplash.com/photo-1608249889684-e91ddbdd47cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
 						alt="some restaurant"
 						sx={{
 							width: "1000px",
@@ -222,8 +221,8 @@ function Home() {
 							color: theme.palette.info.dark,
 						}}
 					>
-						Anyone who cares about the planet can choose to make a difference
-						with Carbon Coin
+						Those who are concerned about the environment can 
+						choose to make a positive impact with Carbon Coin
 					</Typography>
 					<br />
 				</Container>

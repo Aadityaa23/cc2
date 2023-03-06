@@ -30,7 +30,7 @@ function MyDialog(props) {
 			<DialogContent>
 				<Typography variant="subtitle1">
 					Sign up below to become part of our mailing list, and stay updated
-					with our progress. Testing firebase again
+					with our progress.
 				</Typography>
 			</DialogContent>
 			<DialogActions

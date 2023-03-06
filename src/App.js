@@ -9,7 +9,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/AboutUs" element={<AboutUs />} />
-				<Route path="/DAC" element={<DAC />} />
+				<Route path="/dac" element={<DAC />} />
 			</Routes>
 		</BrowserRouter>
 	);

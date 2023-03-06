@@ -94,7 +94,7 @@ function Home() {
 						</Typography>
 						<br />
 						<Button variant="outlined" onClick={handleClickOpen}>
-							<Typography>Buy Now</Typography>>
+							<Typography>Buy Now</Typography>
 						</Button>
 					</Box>
 					<CardMedia

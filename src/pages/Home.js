@@ -93,6 +93,7 @@ function Home() {
 							safely in deep underground vaults.
 						</Typography>
 						<br />
+						<br />
 						<Button variant="outlined" onClick={handleClickOpen}>
 							<Typography>Buy Now</Typography>>
 						</Button>
@@ -233,8 +234,8 @@ function Home() {
 							color: theme.palette.info.dark,
 						}}
 					>
-						Anyone who cares about the planet can choose to make a difference
-						with Carbon Coin
+						Those who are concerned about the environment can 
+						choose to make a positive impact with Carbon Coin
 					</Typography>
 					<br />
 				</Container>

@@ -12,8 +12,7 @@ import {
 import React from "react";
 import NavBar from "../components/NavBar";
 import { theme, Main } from "../components/styles";
-import BannerImage from "../components/forrest.jpg";
-import BanImage from "../components/team.jpg";
+import BanImage from "../components/smoke.jpg";
 import MyBanner from "../components/MyBanner";
 import CCLogo from "../components/cclogo.png";
 import { useMediaQuery } from "react-responsive";
@@ -34,9 +33,7 @@ function DAC() {
 					<NavBar></NavBar>
 					<MyBanner
 						title="Direct Air Capture"
-						BannerImage={
-							"https://pixabay.com/get/gd98c5330d0a5bd6eb8f0144130269f6a58a866f74c7bf09f3be6fec6ff07df3a8644793379479743f136188ee4260986406a581d82668c4ee6441d6b1864a476db8b1d72bacda8e932fc7fd4b6134a98_1920.jpg"
-						}
+						BannerImage={BanImage}
 					></MyBanner>
 					<Container
 						sx={{

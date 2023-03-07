@@ -29,7 +29,7 @@ import {
 	StayPrimaryLandscape,
 } from "@mui/icons-material";
 import { useMediaQuery } from "react-responsive";
-import BanImage from "../components/forrest.jpg";
+import BanImage from "../components/circle.jpg";
 import { useState, useContext, useEffect } from "react";
 
 import CloseIcon from "@mui/icons-material/Close";
@@ -60,7 +60,7 @@ function Home() {
 				<MyBanner
 					title="Carbon Coin"
 					tagline="Using Crypto to Combat Climate Change"
-					BannerImage="https://pixabay.com/get/gaea313ec9fe38008c7d202366927a69a0059412d7f2c3ff395bb3314ff6e385bc823601885f3b186183bc5a2e547fb8132819b2a9ab39e033679ac9a58a081756e40ed310612f272bdb2f8bf89082fb9_1920.jpg"
+					BannerImage={BanImage}
 				></MyBanner>
 
 				<Container
@@ -234,8 +234,8 @@ function Home() {
 							color: theme.palette.info.dark,
 						}}
 					>
-						Those who are concerned about the environment can 
-						choose to make a positive impact with Carbon Coin
+						Those who are concerned about the environment can choose to make a
+						positive impact with Carbon Coin
 					</Typography>
 					<br />
 				</Container>

@@ -9,7 +9,6 @@ import {
 } from "@mui/material";
 import { theme, Banner } from "./styles";
 import { useMediaQuery } from "react-responsive";
-import BannerImage from "../components/forrest.jpg";
 import React from "react";
 import { ContactEmergency, Man } from "@mui/icons-material";
 import { Container } from "@mui/system";

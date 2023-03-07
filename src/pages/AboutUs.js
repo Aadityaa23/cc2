@@ -11,7 +11,6 @@ import {
 import React from "react";
 import NavBar from "../components/NavBar";
 import { theme, Main } from "../components/styles";
-import BannerImage from "../components/forrest.jpg";
 import BanImage from "../components/team.jpg";
 import MyBanner from "../components/MyBanner";
 import CCLogo from "../components/cclogo.png";
@@ -19,6 +18,8 @@ import { useMediaQuery } from "react-responsive";
 import AadiImage from "../components/Aadi.jpg";
 import Footer from "../components/Footer";
 import ThongImage from "../components/Thong.png";
+import LinesImage from "../components/lines.jpg";
+
 function AboutUs() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
 	const flexDir = isMobile ? "column" : "row";
@@ -64,7 +65,7 @@ function AboutUs() {
 						</Box>
 						<CardMedia
 							component="img"
-							src="https://pixabay.com/get/g2e84f0a03d3f85ee7fa5daf9bdeb916f34b7d09e88720b5dcffcd8e3e6a7763251b9e5f1b20c21d070a6116551879f76f05abdded799ac12db013d51b1f0275da6bb4197b9847c7fa439fb89c933e37f_1920.jpg"
+							src={LinesImage}
 							alt="some restaurant"
 							sx={{
 								height: 300,

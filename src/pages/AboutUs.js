@@ -23,7 +23,7 @@ import LinesImage from "../components/lines.jpg";
 function AboutUs() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
 	const flexDir = isMobile ? "column" : "row";
-	var cardWidth = isMobile ? 450 : 1000;
+	var cardWidth = isMobile ? 350 : 1000;
 
 	return (
 		<React.Fragment>
@@ -69,7 +69,6 @@ function AboutUs() {
 							alt="some restaurant"
 							sx={{
 								height: 300,
-								width: 400,
 								px: 1,
 								pb: 5,
 							}}
@@ -97,15 +96,16 @@ function AboutUs() {
 							href={"https://www.linkedin.com/in/aadityaa-gupta-9a7979208/"}
 							target="_blank"
 						>
-							<Card
+							<Box
 								sx={{
 									backgroundColor: theme.palette.secondary.main,
 									color: theme.palette.primary.light,
 									display: "flex",
 									flexDirection: flexDir,
 									alignItems: "center",
-									width: cardWidth,
+									maxWidth: cardWidth,
 									borderRadius: 3,
+									p: 2,
 								}}
 							>
 								<CardMedia
@@ -114,9 +114,9 @@ function AboutUs() {
 									alt="some restaurant"
 									sx={{
 										height: 350,
-										width: 450,
+										widt: 350,
 										py: 5,
-										px: 10,
+										px: isMobile ? 3 : 10,
 									}}
 								/>
 
@@ -142,7 +142,7 @@ function AboutUs() {
 										comedy at the university.
 									</Typography>
 								</Box>
-							</Card>
+							</Box>
 						</ButtonBase>
 
 						<br />
@@ -150,15 +150,16 @@ function AboutUs() {
 							href={"https://www.linkedin.com/in/haithongnguyen/"}
 							target="_blank"
 						>
-							<Card
+							<Box
 								sx={{
 									backgroundColor: theme.palette.secondary.main,
 									color: theme.palette.primary.light,
 									display: "flex",
 									flexDirection: flexDir,
 									alignItems: "center",
-									width: cardWidth,
+									maxWidth: cardWidth,
 									borderRadius: 3,
+									p: 2,
 								}}
 							>
 								<CardMedia
@@ -167,9 +168,9 @@ function AboutUs() {
 									alt="some restaurant"
 									sx={{
 										height: 350,
-										width: 450,
+										widt: 350,
 										py: 5,
-										px: 10,
+										px: isMobile ? 3 : 10,
 									}}
 								/>
 
@@ -193,7 +194,7 @@ function AboutUs() {
 										and occasionally publishes blogs relating to tech.
 									</Typography>
 								</Box>
-							</Card>
+							</Box>
 						</ButtonBase>
 						<br />
 					</Container>

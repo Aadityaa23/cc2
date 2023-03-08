@@ -40,6 +40,7 @@ function Home() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
 	const flexDir = isMobile ? "column" : "row";
 	const currHeight = isMobile ? 500 : 400;
+	const currWidth = isMobile ? 300 : 1;
 
 	const [open, setOpen] = React.useState(false);
 
@@ -55,7 +56,7 @@ function Home() {
 		<React.Fragment>
 			<CssBaseline />
 			<MyDialog open={open} handleClose={handleClose} />
-			<Main>
+			<Main sx={{}}>
 				<NavBar></NavBar>
 				<MyBanner
 					title="Carbon Coin"
@@ -172,7 +173,6 @@ function Home() {
 						src="https://source.unsplash.com/FewHpO4VC9Y"
 						alt="some restaurant"
 						sx={{
-							width: "1000px",
 							height: "250px",
 							px: 1,
 						}}

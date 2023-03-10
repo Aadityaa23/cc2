@@ -19,6 +19,7 @@ import ManIcon from "@mui/icons-material/Man";
 
 function MyGridItem(props) {
 	const body = "";
+	const iconFlag = props.IconFlag ? true : false;
 
 	return (
 		<React.Fragment>
@@ -52,11 +53,14 @@ function MyGridItem(props) {
 							textAlign: "center",
 						}}
 					>
-						<CardMedia
-							component="img"
-							src="https://www.flaticon.com/free-icon/home-button_5974636?term=house&page=1&position=4&origin=search&related_id=5974636"
-							height="100"
-						/>
+						{iconFlag ? (
+							<CardMedia
+								component="img"
+								image={props.IconImage}
+								sx={{ height: 100 }}
+							/>
+						) : null}
+
 						<Typography variant="h3" textAlign="center">
 							{props.title}
 						</Typography>

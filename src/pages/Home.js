@@ -104,8 +104,8 @@ function Home() {
 						src={CCLogo}
 						alt="some restaurant"
 						sx={{
-							height: 300,
-							width: 400,
+							height: 200,
+							width: 300,
 							px: 1,
 							pb: 5,
 						}}
@@ -219,11 +219,21 @@ function Home() {
 						Our Customers{" "}
 					</Typography>
 					<Grid container spacing={4} alignItems="stretch">
-						<MyGridItem title="Individuals">
-							<CloseIcon />
-						</MyGridItem>
-						<MyGridItem title="Small Businesses"></MyGridItem>
-						<MyGridItem title="Corporations"></MyGridItem>
+						<MyGridItem
+							title="Individuals"
+							IconImage={CCLogo}
+							IconFlag={true}
+						></MyGridItem>
+						<MyGridItem
+							title="Small Businesses"
+							IconImage={CCLogo}
+							IconFlag={true}
+						></MyGridItem>
+						<MyGridItem
+							title="Corporations"
+							IconImage={CCLogo}
+							IconFlag={true}
+						></MyGridItem>
 					</Grid>
 					<br />
 					<Typography

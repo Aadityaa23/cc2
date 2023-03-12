@@ -223,21 +223,9 @@ function Home() {
 						Our Customers{" "}
 					</Typography>
 					<Grid container spacing={4} alignItems="stretch">
-						<MyGridItem
-							title="Individuals"
-							IconImage={CCLogo}
-							IconFlag={true}
-						></MyGridItem>
-						<MyGridItem
-							title="Small Businesses"
-							IconImage={CCLogo}
-							IconFlag={true}
-						></MyGridItem>
-						<MyGridItem
-							title="Corporations"
-							IconImage={CCLogo}
-							IconFlag={true}
-						></MyGridItem>
+						<MyGridItem title="Individuals" HouseFlag={true}></MyGridItem>
+						<MyGridItem title="Small Businesses" BusFlag={true}></MyGridItem>
+						<MyGridItem title="Corporations" CorpFlag={true}></MyGridItem>
 					</Grid>
 					<br />
 					<Typography

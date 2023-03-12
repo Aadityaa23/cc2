@@ -10,16 +10,22 @@ import {
 import { theme, Banner } from "./styles";
 import { useMediaQuery } from "react-responsive";
 import React from "react";
-import { ContactEmergency, Man } from "@mui/icons-material";
+import { ContactEmergency, Man, Sick } from "@mui/icons-material";
 import { Container } from "@mui/system";
 import CCLogo from "./cclogo.png";
 
 import CloseIcon from "@mui/icons-material/Close";
 import ManIcon from "@mui/icons-material/Man";
+import HouseIcon from "@mui/icons-material/House";
+import BusinessIcon from "@mui/icons-material/Business";
+import StoreIcon from "@mui/icons-material/Store";
 
 function MyGridItem(props) {
 	const body = "";
-	const iconFlag = props.IconFlag ? true : false;
+	const houseFlag = props.HouseFlag ? true : false;
+	const busFlag = props.BusFlag ? true : false;
+
+	const corpFlag = props.CorpFlag ? true : false;
 
 	return (
 		<React.Fragment>
@@ -53,13 +59,10 @@ function MyGridItem(props) {
 							textAlign: "center",
 						}}
 					>
-						{iconFlag ? (
-							<CardMedia
-								component="img"
-								image={props.IconImage}
-								sx={{ height: 100 }}
-							/>
-						) : null}
+						{houseFlag ? <HouseIcon sx={{ fontSize: "100px" }} /> : null}
+						{busFlag ? <StoreIcon sx={{ fontSize: "100px" }} /> : null}
+
+						{corpFlag ? <BusinessIcon sx={{ fontSize: "100px" }} /> : null}
 
 						<Typography variant="h3" textAlign="center">
 							{props.title}

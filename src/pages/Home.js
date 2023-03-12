@@ -14,6 +14,7 @@ import {
 	Card,
 	List,
 	ListItem,
+	ListItemIcon,
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
@@ -31,8 +32,11 @@ import {
 import { useMediaQuery } from "react-responsive";
 import BanImage from "../components/circle.jpg";
 import { useState, useContext, useEffect } from "react";
-
-import CloseIcon from "@mui/icons-material/Close";
+import HistoryToggleOffIcon from "@mui/icons-material/HistoryToggleOff";
+import ShowChartIcon from "@mui/icons-material/ShowChart";
+import PublicIcon from "@mui/icons-material/Public";
+import ShareIcon from "@mui/icons-material/Share";
+import LocalPoliceIcon from "@mui/icons-material/LocalPolice";
 
 import MyDialog from "../components/MyDialog";
 
@@ -249,71 +253,97 @@ function Home() {
 					</Typography>
 					<br />
 				</Container>
+
 				<Container
 					sx={{
-						display: "flex",
-						flexDirection: flexDir,
 						alignItems: "center",
 						justifyContent: "center",
 						py: 7,
-						px: 10,
+						px: isMobile ? 5 : 10,
 					}}
 				>
-					<Box
-						sx={{
-							p: 5,
-						}}
-					>
-						<Typography variant="h2" gutterBottom>
-							Benefits
-						</Typography>
-					</Box>
-					<Box
-						sx={{
-							px: isMobile ? 1 : 5,
-						}}
-					>
-						<List>
-							<ListItem>
-								<Typography variant="body">
-									Track the exact amount of CO2 you have buried
-								</Typography>
-							</ListItem>
-							<ListItem>
-								<Typography variant="body">
-									Earn interest on your investments by staking
-								</Typography>
-							</ListItem>
-							<ListItem>
-								<Typography variant="body">
-									Join the rest of the world to combat climate change
-								</Typography>
-							</ListItem>
-						</List>
-					</Box>
-					<Box
-						sx={{
-							px: isMobile ? 1 : 5,
-						}}
-					>
-						<List>
-							<ListItem>
-								<Typography variant="body">
-									Share your contributions with the rest of the world
-								</Typography>
-							</ListItem>
-							<ListItem>
-								<Typography variant="body">
-									Get the highest quality carbon credits
-								</Typography>
-							</ListItem>
-							<ListItem>
-								<Typography variant="body">
-									Have a direct impact on the climate crisis
-								</Typography>
-							</ListItem>
-						</List>
-					</Box>
+					<Grid container spacing={2}>
+						<Grid
+							item
+							sx={{
+								display: "flex",
+								alignItems: "center",
+								justifyContent: "center",
+							}}
+							xs={12}
+							sm={6}
+							md={4}
+							lg={4}
+							xl={2}
+						>
+							<Typography variant="h2" gutterBottom>
+								Benefits
+							</Typography>
+						</Grid>
+						<Grid item xs={12} sm={6} md={4} lg={4} xl={2}>
+							<List>
+								<ListItem>
+									<ListItemIcon>
+										<HistoryToggleOffIcon
+											fontSize="large"
+											sx={{ color: theme.palette.primary.light }}
+										/>
+									</ListItemIcon>
+									<Typography variant="body">
+										Track the exact amount of CO2 you have buried
+									</Typography>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<ShowChartIcon
+											fontSize="large"
+											sx={{ color: theme.palette.secondary.light }}
+										/>
+									</ListItemIcon>
+									<Typography variant="body">
+										Earn interest on your investments by staking
+									</Typography>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<PublicIcon
+											fontSize="large"
+											sx={{ color: theme.palette.secondary.light }}
+										/>
+									</ListItemIcon>
+									<Typography variant="body">
+										Join the rest of the world to combat climate change
+									</Typography>
+								</ListItem>
+							</List>
+						</Grid>
+						<Grid item xs={12} sm={6} md={4} lg={4} xl={2}>
+							<List>
+								<ListItem>
+									<ListItemIcon>
+										<ShareIcon
+											fontSize="large"
+											sx={{ color: theme.palette.secondary.light }}
+										/>
+									</ListItemIcon>
+									<Typography variant="body">
+										Share your contributions with the rest of the world
+									</Typography>
+								</ListItem>
+								<ListItem>
+									<ListItemIcon>
+										<LocalPoliceIcon
+											fontSize="large"
+											sx={{ color: theme.palette.secondary.light }}
+										/>
+									</ListItemIcon>
+									<Typography variant="body">
+										Get the highest quality carbon credits
+									</Typography>
+								</ListItem>
+							</List>
+						</Grid>
+					</Grid>
 				</Container>
 			</Main>
 			<Footer></Footer>

@@ -49,7 +49,7 @@ function DAC() {
 								textAlign: "center",
 							}}
 						>
-							<Typography gutterBottom variant="h2">
+							<Typography gutterBottom variant="h4">
 								What is Direct Air Capture?
 							</Typography>
 							<Typography
@@ -85,11 +85,11 @@ function DAC() {
 						</Box>
 						<CardMedia
 							component="img"
-							src="https://pixabay.com/get/g1a58fc12e780373a1864073abb5b1c33904ec35eea202d85ee4073b97cb809ec49cef8d5bf28ff30e2e76d0db81096a9775db4f85e4e46d4805d06573fcda51a803371da0f4109880177d59e9aff071a_1280.png"
+							src={CCLogo}
 							alt="some restaurant"
 							sx={{
-								height: 400,
-								width: 400,
+								height: 200,
+								width: 300,
 								px: 1,
 								pb: 5,
 							}}
@@ -112,7 +112,7 @@ function DAC() {
 						>
 							The Process
 						</Typography>
-						<Grid container spacing={4}>
+						<Grid container spacing={3}>
 							<MyGridItem
 								title="Step 1"
 								body="Air is sucked into a large container"
@@ -145,13 +145,11 @@ function DAC() {
 							display: "flex",
 							flexDirection: flexDir,
 							alignItems: "center",
+							mt: 3,
+							mb: 5,
 						}}
 					>
-						<Box
-							sx={{
-								p: 5,
-							}}
-						>
+						<Box>
 							<iframe
 								width="360"
 								height="200"
@@ -168,7 +166,7 @@ function DAC() {
 								textAlign: "center",
 							}}
 						>
-							<Typography variant="h2" gutterBottom>
+							<Typography variant="h4" gutterBottom>
 								Why Direct Air Capture?
 							</Typography>
 							<Typography

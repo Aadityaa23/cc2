@@ -79,7 +79,7 @@ function Home() {
 				>
 					<Box
 						sx={{
-							p: 7,
+							m: 2,
 						}}
 					>
 						<Typography gutterBottom variant="h2">
@@ -132,7 +132,7 @@ function Home() {
 					>
 						We are doing this by...
 					</Typography>
-					<Grid container spacing={4}>
+					<Grid container spacing={3}>
 						<MyGridItem
 							title="Step 1"
 							body="Remove one tonne of CO2 for each Carbon Coin produced"

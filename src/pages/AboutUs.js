@@ -18,7 +18,7 @@ import { useMediaQuery } from "react-responsive";
 import AadiImage from "../components/Aadi.jpg";
 import Footer from "../components/Footer";
 import ThongImage from "../components/Thong.png";
-import LinesImage from "../components/lines.jpg";
+import LinesImage from "../components/lines.png";
 
 function AboutUs() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });

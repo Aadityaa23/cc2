@@ -23,6 +23,7 @@ import MyBanner from "../components/MyBanner";
 import MyGridItem from "../components/MyGridItem";
 import Footer from "../components/Footer";
 import { Main, theme } from "../components/styles";
+import HomePic from "../components/home-banner.png";
 import CCLogo from "../components/cclogo.png";
 import {
 	PropaneSharp,
@@ -169,10 +170,10 @@ function Home() {
 				>
 					<CardMedia
 						component="img"
-						src="https://source.unsplash.com/FewHpO4VC9Y"
+						src={HomePic}
 						alt="some restaurant"
 						sx={{
-							height: "250px",
+							height: "350px",
 							p: 1,
 						}}
 					/>

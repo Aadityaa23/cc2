@@ -77,7 +77,7 @@ function Home() {
 						p: 5,
 					}}
 				>
-					<Box sx={{ mx: isMobile ? 0 : 2, my: 3 }}>
+					<Box sx={{ px: isMobile ? 1 : 5, py: 5 }}>
 						<Typography gutterBottom variant="h2">
 							Our Mission
 						</Typography>
@@ -178,7 +178,8 @@ function Home() {
 					/>
 					<Box
 						sx={{
-							m: 2,
+							py: 5,
+							px: isMobile ? 1 : 5,
 						}}
 					>
 						<Typography gutterBottom variant="h2">

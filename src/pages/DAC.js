@@ -40,13 +40,16 @@ function DAC() {
 							display: "flex",
 							flexDirection: flexDir,
 							alignItems: "center",
+							justifyContent: "center",
+							py: 8,
+							px: 5,
 						}}
 					>
 						<Box
 							sx={{
-								p: 7,
-								py: 10,
 								textAlign: "center",
+								py: 5,
+								px: isMobile ? 1 : 5,
 							}}
 						>
 							<Typography gutterBottom variant="h4">
@@ -90,8 +93,7 @@ function DAC() {
 							sx={{
 								height: 200,
 								width: 300,
-								px: 1,
-								pb: 5,
+								p: 1,
 							}}
 						/>
 					</Container>
@@ -145,11 +147,10 @@ function DAC() {
 							display: "flex",
 							flexDirection: flexDir,
 							alignItems: "center",
-							mt: 3,
-							mb: 5,
+							p: 5,
 						}}
 					>
-						<Box>
+						<Box sx={{ p: 1 }}>
 							<iframe
 								width="360"
 								height="200"
@@ -162,7 +163,8 @@ function DAC() {
 						</Box>
 						<Box
 							sx={{
-								p: 5,
+								px: isMobile ? 1 : 5,
+								py: 5,
 								textAlign: "center",
 							}}
 						>

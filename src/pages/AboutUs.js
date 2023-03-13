@@ -37,14 +37,10 @@ function AboutUs() {
 							flexDirection: flexDir,
 							alignItems: "center",
 							justifyContent: "center",
-							height: { lg: 350, md: 400 },
+							p: 5,
 						}}
 					>
-						<Box
-							sx={{
-								p: 7,
-							}}
-						>
+						<Box sx={{ px: isMobile ? 1 : 5, py: 5 }}>
 							<Typography gutterBottom variant="h2">
 								Our Purpose
 							</Typography>
@@ -68,11 +64,11 @@ function AboutUs() {
 							src={LinesImage}
 							alt="some restaurant"
 							sx={{
-								height: 300,
-								px: 1,
-								pb: 5,
+								height: 200,
+								p: 1,
 							}}
 						/>
+						<br />
 					</Container>
 					<Container
 						sx={{

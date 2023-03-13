@@ -74,14 +74,10 @@ function Home() {
 						flexDirection: flexDir,
 						alignItems: "center",
 						justifyContent: "center",
-						height: { lg: 350, md: 400 },
+						p: 5,
 					}}
 				>
-					<Box
-						sx={{
-							m: 2,
-						}}
-					>
+					<Box sx={{ mx: isMobile ? 0 : 2, my: 3 }}>
 						<Typography gutterBottom variant="h2">
 							Our Mission
 						</Typography>
@@ -110,8 +106,7 @@ function Home() {
 						sx={{
 							height: 200,
 							width: 300,
-							px: 1,
-							pb: 5,
+							p: 1,
 						}}
 					/>
 				</Container>
@@ -169,7 +164,7 @@ function Home() {
 						flexDirection: flexDir,
 						alignItems: "center",
 						justifyContent: "center",
-						py: 7,
+						p: 5,
 					}}
 				>
 					<CardMedia
@@ -178,12 +173,12 @@ function Home() {
 						alt="some restaurant"
 						sx={{
 							height: "250px",
-							px: 1,
+							p: 1,
 						}}
 					/>
 					<Box
 						sx={{
-							p: 7,
+							m: 2,
 						}}
 					>
 						<Typography gutterBottom variant="h2">
@@ -247,7 +242,7 @@ function Home() {
 						alignItems: "center",
 						justifyContent: "center",
 						py: 7,
-						px: isMobile ? 5 : 10,
+						px: isMobile ? 3 : 10,
 					}}
 				>
 					<Grid container spacing={2}>

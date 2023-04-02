@@ -14,7 +14,7 @@ import NavBar from "../components/NavBar";
 import { theme, Main } from "../components/styles";
 import BanImage from "../components/smoke.jpg";
 import MyBanner from "../components/MyBanner";
-import CCLogo from "../components/cclogo.png";
+import DACPic from "../components/dacpic.png";
 import { useMediaQuery } from "react-responsive";
 import AadiImage from "../components/Aadi.jpg";
 import Footer from "../components/Footer";
@@ -88,7 +88,7 @@ function DAC() {
 						</Box>
 						<CardMedia
 							component="img"
-							src={CCLogo}
+							src={DACPic}
 							alt="some restaurant"
 							sx={{
 								height: 200,

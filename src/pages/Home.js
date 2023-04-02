@@ -64,8 +64,8 @@ function Home() {
 			<Main sx={{}}>
 				<NavBar></NavBar>
 				<MyBanner
-					title="Carbon Coin"
-					tagline="Using Crypto to Combat Climate Change"
+					title="A blockchain solution for the climate crisis"
+					tagline="Invest in the highest quality Carbon Capture projects today, and be certain that your contributions have a real impact"
 					BannerImage={BanImage}
 				></MyBanner>
 
@@ -79,8 +79,8 @@ function Home() {
 					}}
 				>
 					<Box sx={{ px: isMobile ? 1 : 5, py: 5 }}>
-						<Typography gutterBottom variant="h2">
-							Our Mission
+						<Typography gutterBottom variant="h3">
+							As Good As Carbon
 						</Typography>
 						<Typography
 							gutterBottom
@@ -118,7 +118,7 @@ function Home() {
 					}}
 				>
 					<Typography
-						variant="h2"
+						variant="h3"
 						gutterBottom
 						textAlign="center"
 						sx={{
@@ -183,7 +183,7 @@ function Home() {
 							px: isMobile ? 1 : 5,
 						}}
 					>
-						<Typography gutterBottom variant="h2">
+						<Typography gutterBottom variant="h3">
 							Sustainable Tech
 						</Typography>
 						<Typography
@@ -209,7 +209,7 @@ function Home() {
 					}}
 				>
 					<Typography
-						variant="h2"
+						variant="h3"
 						gutterBottom
 						textAlign="center"
 						sx={{
@@ -261,7 +261,7 @@ function Home() {
 							lg={4}
 							xl={2}
 						>
-							<Typography variant="h2" gutterBottom>
+							<Typography variant="h3" gutterBottom>
 								Benefits
 							</Typography>
 						</Grid>
@@ -297,7 +297,7 @@ function Home() {
 										/>
 									</ListItemIcon>
 									<Typography variant="body">
-										Join the rest of the world to combat climate change
+										Join a community of like-minded people
 									</Typography>
 								</ListItem>
 							</List>

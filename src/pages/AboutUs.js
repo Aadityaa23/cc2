@@ -18,7 +18,7 @@ import { useMediaQuery } from "react-responsive";
 import AadiImage from "../components/Aadi.jpg";
 import Footer from "../components/Footer";
 import ThongImage from "../components/Thong.png";
-import LinesImage from "../components/lines.png";
+import AboutPic from "../components/aboutpic.png";
 
 function AboutUs() {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
@@ -61,10 +61,10 @@ function AboutUs() {
 						</Box>
 						<CardMedia
 							component="img"
-							src={LinesImage}
+							src={AboutPic}
 							alt="some restaurant"
 							sx={{
-								height: 200,
+								height: 250,
 								p: 1,
 							}}
 						/>

@@ -23,7 +23,7 @@ import MyBanner from "../components/MyBanner";
 import MyGridItem from "../components/MyGridItem";
 import Footer from "../components/Footer";
 import { Main, theme } from "../components/styles";
-import HomePic from "../components/home-banner.png";
+import HomePic from "../components/homepic.png";
 import CCLogo from "../components/cclogo.png";
 import {
 	PropaneSharp,

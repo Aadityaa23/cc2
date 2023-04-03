@@ -14,7 +14,7 @@ import { Container } from "@mui/system";
 
 function MyBanner(props) {
 	const isMobile = useMediaQuery({ query: `(max-width: 550px)` });
-	var currHeight = isMobile ? 400 : 500;
+	var currHeight = isMobile ? 450 : 500;
 	var currWidth = isMobile ? 3 : 15;
 
 	var currLogo = isMobile ? "column" : "row";

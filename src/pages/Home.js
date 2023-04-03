@@ -103,7 +103,7 @@ function Home() {
 					<CardMedia
 						component="img"
 						src={CCLogo}
-						alt="some restaurant"
+						alt="Carbon Coin Logo"
 						sx={{
 							height: 200,
 							width: 300,
@@ -171,7 +171,7 @@ function Home() {
 					<CardMedia
 						component="img"
 						src={HomePic}
-						alt="some restaurant"
+						alt="molecules"
 						sx={{
 							height: "350px",
 							p: 1,

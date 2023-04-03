@@ -122,7 +122,6 @@ function Home() {
 						gutterBottom
 						textAlign="center"
 						sx={{
-							color: theme.palette.info.dark,
 							p: 2,
 						}}
 					>

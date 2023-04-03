@@ -46,7 +46,7 @@ function NavBar() {
 									<CardMedia
 										component="img"
 										src={CCLogo}
-										alt="some restaurant"
+										alt="Carbon Coin Logo"
 										sx={{
 											height: 30,
 											width: 60,

@@ -89,7 +89,7 @@ function DAC() {
 						<CardMedia
 							component="img"
 							src={DACPic}
-							alt="some restaurant"
+							alt="molecules"
 							sx={{
 								height: 200,
 								width: 300,
@@ -104,7 +104,7 @@ function DAC() {
 						}}
 					>
 						<Typography
-							variant="h2"
+							variant="h3"
 							gutterBottom
 							textAlign="center"
 							sx={{

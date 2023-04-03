@@ -41,7 +41,7 @@ function AboutUs() {
 						}}
 					>
 						<Box sx={{ px: isMobile ? 1 : 5, py: 5 }}>
-							<Typography gutterBottom variant="h2">
+							<Typography gutterBottom variant="h3">
 								Our Purpose
 							</Typography>
 							<Typography
@@ -62,7 +62,7 @@ function AboutUs() {
 						<CardMedia
 							component="img"
 							src={AboutPic}
-							alt="some restaurant"
+							alt="molecules"
 							sx={{
 								height: 250,
 								p: 1,
@@ -80,7 +80,7 @@ function AboutUs() {
 						}}
 					>
 						<Typography
-							variant="h2"
+							variant="h3"
 							color="#000000"
 							sx={{
 								p: 2,
@@ -107,7 +107,7 @@ function AboutUs() {
 								<CardMedia
 									component="img"
 									src={AadiImage}
-									alt="some restaurant"
+									alt="Picture of Aadityaa Gupta"
 									sx={{
 										height: 350,
 										widt: 350,
@@ -161,7 +161,7 @@ function AboutUs() {
 								<CardMedia
 									component="img"
 									src={ThongImage}
-									alt="some restaurant"
+									alt="Picture of Hai Thong Nguyen"
 									sx={{
 										height: 350,
 										widt: 350,

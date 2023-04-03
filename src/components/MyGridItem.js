@@ -24,8 +24,8 @@ function MyGridItem(props) {
 	const body = "";
 	const houseFlag = props.HouseFlag ? true : false;
 	const busFlag = props.BusFlag ? true : false;
-
 	const corpFlag = props.CorpFlag ? true : false;
+	const typVar = houseFlag || busFlag || corpFlag ? "h4" : "h3";
 
 	return (
 		<React.Fragment>
@@ -64,7 +64,7 @@ function MyGridItem(props) {
 
 						{corpFlag ? <BusinessIcon sx={{ fontSize: "100px" }} /> : null}
 
-						<Typography variant="h3" textAlign="center">
+						<Typography variant={typVar} textAlign="center">
 							{props.title}
 						</Typography>
 						<Typography variant="p">{props.body}</Typography>

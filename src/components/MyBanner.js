@@ -19,7 +19,8 @@ function MyBanner(props) {
 
 	var currLogo = isMobile ? "column" : "row";
 	var titleFontSize = isMobile ? "50px" : "80px";
-	var tagFontSize = isMobile ? "20px" : "25px";
+	var tagFontSize = "20px";
+	var typVar = props.tagline ? "h3" : "h2";
 
 	return (
 		<React.Fragment>
@@ -55,25 +56,23 @@ function MyBanner(props) {
 						}}
 						sx={{
 							backgroundClip: theme.palette.primary.main,
+							textAlign: "center",
+							maxWidth: 700,
+							p: 2,
 						}}
 					>
-						<Typography
-							gutterBottom
-							textAlign="center"
-							variant="h2"
-							color="white"
-							fontSize={titleFontSize}
-						>
+						<Typography gutterBottom variant={typVar} color="white">
 							{props.title}
 						</Typography>
-						<Typography
-							fontSize={tagFontSize}
-							gutterBottom
-							variant="h5"
-							textAlign="center"
-						>
-							{props.tagline}
-						</Typography>
+						<Box sx={{ px: isMobile ? 5 : 10 }}>
+							<Typography
+								variant="body"
+								fontSize={tagFontSize}
+								sx={{ color: theme.palette.secondary.light }}
+							>
+								{props.tagline}
+							</Typography>
+						</Box>
 					</Box>
 				</Box>
 				<BorderDivider></BorderDivider>

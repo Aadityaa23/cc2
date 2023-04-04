@@ -170,7 +170,7 @@ function Home() {
 					<CardMedia
 						component="img"
 						src={HomePic}
-						alt="molecules"
+						alt="Carbon molecules"
 						sx={{
 							height: "350px",
 							p: 1,

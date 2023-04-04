@@ -62,7 +62,7 @@ function AboutUs() {
 						<CardMedia
 							component="img"
 							src={AboutPic}
-							alt="molecules"
+							alt="Carbon molecules"
 							sx={{
 								height: 250,
 								p: 1,

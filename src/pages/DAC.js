@@ -89,7 +89,7 @@ function DAC() {
 						<CardMedia
 							component="img"
 							src={DACPic}
-							alt="molecules"
+							alt="Carbon molecules"
 							sx={{
 								height: 200,
 								width: 300,

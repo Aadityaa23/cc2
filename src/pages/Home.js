@@ -198,6 +198,13 @@ function Home() {
 							scalable
 						</Typography>
 						<br />
+						<br />
+						<Button
+							variant="outlined"
+							href="https://docs.google.com/document/d/1A379fVa-I6TOSZ3XUNtFokAcnA4-L0Fhn9c8LMfN5QQ/edit?usp=sharing"
+						>
+							<Typography>Check out the whitepaper</Typography>
+						</Button>
 					</Box>
 				</Container>
 				<Container
